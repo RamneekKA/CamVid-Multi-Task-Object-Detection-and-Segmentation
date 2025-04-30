@@ -5,31 +5,38 @@ Description: This repository contains the code to implement a custom Mask R-CNN 
 ## Running Solution
 
 This repository has the following structure 
+```
 
-.
-├── data/                                       # Dataset directory
-├── src/                                        # Source code
-│   ├── pytorch_helper/                         # PyTorch utility scripts
-│   │   ├── coco_eval.py                        # COCO evaluation metrics
-│   │   ├── coco_utils.py                       # COCO utilities for evaluation
-│   │   ├── engine.py                           # Training and evaluation utilities
-│   │   ├── transforms.py                       # Transformations for data augmentation
-│   │   └── utils.py                            # General utilities
-│   ├── camvid_analysis.py                      # CamVid dataset analysis
-│   ├── setup.py                                # Project setup script
-│   ├── dataset_manager.py                      # File management utilities
-│   ├── dataloader.py                           # Data loading and pre-processing utilities
-│   ├── train.py                                # Training script
-│   └── test.py                                 # Testing and evaluation script
-├── results/                                    # Results directory
-│   ├── evaluation_results/                     # Evaluation metrics and reports
-│   ├── visualization_results/                  # Visualization outputs
-│   └── histogram_based_augmentation.png        # Augmentation visualization
-├── requirements.txt                            # Dependencies
-└── README.md                                   # This file
+├── CAMVID-MULTI-TAS
+│   ├── data/
+│   ├── src/
+│   │   ├── analysis_results/
+│   │   │   ├── instance_statistics.csv
+│   │   │   ├── pixel_distribution.csv
+│   │   │   └── results/
+│   │   │       ├── evaluation_results/
+│   │   │       ├── visualization_results/
+│   │   │       └── histogram_based_augmentation.png
+│   │   ├── pytorch_helper/
+│   │   │   ├── __pycache__/
+│   │   │   ├── coco_eval.py
+│   │   │   ├── coco_utils.py
+│   │   │   ├── engine.py
+│   │   │   ├── transforms.py
+│   │   │   └── utils.py
+│   │   ├── camvid_maskrcnn_model.py
+│   │   ├── camvidanalysis.py
+│   │   ├── dataloader.py
+│   │   ├── dataset_manager.py
+│   │   ├── model.py
+│   │   ├── setup.py
+│   │   ├── test.py
+│   │   └── train.py
+│   ├── README.md
+│   └── requirements.txt
+```
 
 Please ensure that your CamVId dataset is placed in the data folder and only run the setup.py file if you do not have the helper files already in the folder. 
-
 
 ## Visual Results
 
@@ -38,19 +45,19 @@ Some examples of the achieved predictions are shown below:
 
 ### Sample Model Predictions
 <p align="center">
-  <img src="/home/roboticsstudent/Documents/COMP0248_RamneekAhluwalia/src/results/visualization_results/sample_0.png"width="80%" alt="Sample prediction"/>
+  <img src="src/results/visualization_results/sample_0.png"width="80%" alt="Sample prediction"/>
 </p>
 
 <p align="center">
-  <img src="/home/roboticsstudent/Documents/COMP0248_RamneekAhluwalia/src/results/visualization_results/sample_1.png"width="80%" alt="Sample prediction"/>
+  <img src="src/results/visualization_results/sample_1.png"width="80%" alt="Sample prediction"/>
 </p>
 
 <p align="center">
-  <img src="/home/roboticsstudent/Documents/COMP0248_RamneekAhluwalia/src/results/visualization_results/sample_2.png"width="80%" alt="Sample prediction"/>
+  <img src="src/results/visualization_results/sample_2.png"width="80%" alt="Sample prediction"/>
 </p>
 
 <p align="center">
-  <img src="/home/roboticsstudent/Documents/COMP0248_RamneekAhluwalia/src/results/visualization_results/sample_7.png"width="80%" alt="Sample prediction"/>
+  <img src="src/results/visualization_results/sample_7.png"width="80%" alt="Sample prediction"/>
 
 
 ## Acknowledgements
