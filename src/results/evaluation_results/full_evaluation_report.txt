@@ -1,0 +1,38 @@
+================================================================================
+MASK R-CNN EVALUATION REPORT
+================================================================================
+
+BASIC METRICS:
+--------------------------------------------------------------------------------
+Precision: 0.5981
+Recall: 0.7261
+F1 Score: 0.6559
+True Positives: 1177
+False Positives: 791
+False Negatives: 444
+
+COCO METRICS:
+--------------------------------------------------------------------------------
+Detection (Bounding Box):
+mAP @[0.5:0.95]: 0.4169
+mAP @0.5: 0.6703
+mAP @0.75: 0.4095
+
+Segmentation (Mask):
+mAP @[0.5:0.95]: 0.3850
+mAP @0.5: 0.6550
+mAP @0.75: 0.4130
+
+Per-class AP@0.5 for Detection:
+Bicyclist: 0.7713
+Car: 0.7748
+MotorcycleScooter: 0.6634
+Pedestrian: 0.6207
+Truck_Bus: 0.5213
+
+Per-class AP@0.5 for Segmentation:
+Bicyclist: 0.7611
+Car: 0.7697
+MotorcycleScooter: 0.6634
+Pedestrian: 0.5461
+Truck_Bus: 0.5348

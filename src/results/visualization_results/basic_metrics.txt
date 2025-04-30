@@ -1,0 +1,7 @@
+Basic Test Set Metrics:
+Precision: 0.5981
+Recall: 0.7261
+F1 Score: 0.6559
+True Positives: 1177
+False Positives: 791
+False Negatives: 444
